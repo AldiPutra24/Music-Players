@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="MusicApp.RegistePage"
+                >
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#e6e6e6">
+            <Grid>
+                <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+                    <Frame HeightRequest="300" BackgroundColor="#0099ff" Padding="0" Margin="0">
+                        <Image Source="music.jpg" Aspect="AspectFill" Margin="0"/>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Padding="0" Margin="10,100,10,0" HorizontalOptions="FillAndExpand">
+                    <Frame  BackgroundColor="White" HeightRequest="500" HasShadow="True" Padding="0" Margin="0">
+
+                        <StackLayout>
+                            <Image Source="https://od.lk/s/NF8yNjQ5NzQzODdf/1673231756-picsay.jpg" WidthRequest="100" HeightRequest="100"/>
+
+                            <StackLayout Margin="10">
+                                <Label Text="Register" TextColor="Black" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="30"/>
+                            </StackLayout>
+
+                            <StackLayout Padding="0" Margin="15,10">
+
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                            <Image Source="https://www.findool.com/images/avatars/avatar.png" Aspect="AspectFill" Margin="0"/>
+                                        </Frame>
+                                        <Entry Placeholder="Username" TextColor="#0099ff" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" x:Name="EntryUserName"/>
+                                    </StackLayout>
+                                </Frame>
+
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                            <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
+                                        </Frame>
+                                        <Entry Placeholder="Password" IsPassword="True" TextColor="#0099ff" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" x:Name="EntryUserPassword" />
+                                    </StackLayout>
+                                </Frame>
+
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                            <Image Source="email.png" Aspect="AspectFill" Margin="0"/>
+                                        </Frame>
+                                        <Entry Placeholder="Email" TextColor="#0099ff" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" x:Name="EntryUserEmail" />
+                                    </StackLayout>
+                                </Frame>
+
+
+                                <Button
+                            Margin="0,15,0,0"
+                            HorizontalOptions="Center"
+                            Text="Resgister"
+                            TextColor="White"
+                            BackgroundColor="#0099ff"
+                            Clicked="Button_Clicked"
+                            WidthRequest="500"
+                            CornerRadius="30"
+                            ></Button>
+
+
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
